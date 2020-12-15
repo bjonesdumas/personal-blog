@@ -1,5 +1,4 @@
 <div class="max-w-5xl mx-auto relative mt-16">
-    {{ svg src="/assets/site/scratches" class="absolute text-gray-800 mt-8 top-0 left-0 w-20 hidden md:block" }}
     <article class="py-32 max-w-2xl mx-auto">
         <header class="content mb-16">
             <h1>{{ title }}</h1>
@@ -8,17 +7,31 @@
 
         {{ collection:articles as="articles" paginate="10" }}
         {{ if no_results }}
-        <h2 class="text-3xl italic tracking-tight">Feel the rhythm! Feel the rhyme! Get on up, it's writing time! Cool
-            writings!</h2>
+        <h2 class="text-3xl italic tracking-tight">More writing coming soon!</h2>
         {{ /if }}
-
+<!-- 
         {{ articles }}
         <div class="mb-2">
             <a href="{{ url }}" class="text-lg hover:text-teal tracking-tight leading-tight font-bold">
                 {{ title | widont }}
             </a>
         </div>
+        {{ /articles }} -->
+
+        {{ articles }}
+        <div class="mb-16">
+            <h2 class="mb-4">
+                <a href="{{ url }}" class="text-2xl hover:text-teal tracking-tight leading-tight font-bold">
+                    {{ title | widont }}
+                </a>
+            </h2>
+            <p class="text-gray-600">
+                <span class="text-gray-800 text-sm uppercase tracking-widest font-medium">{{ date }}</span> &mdash;
+                {{ excerpt | widont ?? content | strip_tags | safe_truncate:160:...}}
+            </p>
+        </div>
         {{ /articles }}
+
 
         {{ paginate }}
         {{ if prev_page || next_page }}

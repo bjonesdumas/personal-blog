@@ -1,8 +1,7 @@
 ---
-title: Articles
+title: Blog
 template: articles.index
-updated_by: 96300192-873c-4615-b992-157508a8d7c5
-updated_at: 1579283552
+updated_by: a6ceb2b9-2fad-4fb5-a9cb-c2d75ae33404
+updated_at: 1607904971
 id: b9e4bfe3-9c12-4553-b7ef-f43c22ffaa63
 ---
-These are my various writings. Some might say they are cool.

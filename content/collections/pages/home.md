@@ -1,8 +1,12 @@
 ---
 title: Home
-id: home
 template: home
 blueprint: home
-subtitle: I see pride. I see power.
+subtitle: Welcome!
+updated_by: a6ceb2b9-2fad-4fb5-a9cb-c2d75ae33404
+updated_at: 1607919622
+id: home
 ---
-I see a bad-ass mother who don't take no crap off of nobody.
+I'm Brittany Jones-Dumas
+
+## Latest Post
