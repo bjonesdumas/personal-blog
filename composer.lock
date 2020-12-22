@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "763654013cdb9359745cba57ea75a789",
+    "content-hash": "4aa6e79482e5fd7fe28dd31e81405869",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -853,6 +853,52 @@
                 }
             ],
             "time": "2020-11-14T15:56:27+00:00"
+        },
+        {
+            "name": "espresso-dev/instagram-basic-display-php",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/espresso-dev/instagram-basic-display-php.git",
+                "reference": "8b9ac7a7bd3dca6c3a31ca66afe5508e0eae9f28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/espresso-dev/instagram-basic-display-php/zipball/8b9ac7a7bd3dca6c3a31ca66afe5508e0eae9f28",
+                "reference": "8b9ac7a7bd3dca6c3a31ca66afe5508e0eae9f28",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EspressoDev\\InstagramBasicDisplay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Herman Schutte",
+                    "email": "herman@espresso.dev"
+                }
+            ],
+            "description": "A simple PHP class for accessing the Instagram Basic Display API",
+            "homepage": "https://github.com/espresso-dev/instagram-basic-display-php",
+            "keywords": [
+                "api",
+                "instagram"
+            ],
+            "support": {
+                "issues": "https://github.com/espresso-dev/instagram-basic-display-php/issues",
+                "source": "https://github.com/espresso-dev/instagram-basic-display-php/tree/v1.1.4"
+            },
+            "time": "2020-10-22T07:42:32+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -2474,6 +2520,52 @@
             "time": "2020-12-03T17:45:45+00:00"
         },
         {
+            "name": "nineteensquared/instagram",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nineteen-2/statamic-instagram-basic-display-api.git",
+                "reference": "d5eb1b3930782a1c3a457b98f72e4bd9f3cc06bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nineteen-2/statamic-instagram-basic-display-api/zipball/d5eb1b3930782a1c3a457b98f72e4bd9f3cc06bc",
+                "reference": "d5eb1b3930782a1c3a457b98f72e4bd9f3cc06bc",
+                "shasum": ""
+            },
+            "require": {
+                "espresso-dev/instagram-basic-display-php": "^1.1",
+                "php": "^7.3"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Instagram",
+                    "description": "Instagram Feed addon using Instagram Basic Display API"
+                },
+                "laravel": {
+                    "providers": [
+                        "NineteenSquared\\Instagram\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NineteenSquared\\Instagram\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Instagram feed for Statamic using Instagram Basic Display API",
+            "support": {
+                "issues": "https://github.com/nineteen-2/statamic-instagram-basic-display-api/issues",
+                "source": "https://github.com/nineteen-2/statamic-instagram-basic-display-api/tree/1.0.4"
+            },
+            "time": "2020-09-03T22:09:25+00:00"
+        },
+        {
             "name": "opis/closure",
             "version": "3.6.1",
             "source": {
@@ -3467,16 +3559,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.34",
+            "version": "v3.0.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "100ae64ee18c6cdb3ac54fa3fd64bd744e6e6931"
+                "reference": "653430e185e9c457b69bb879e30b6db1b4894606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/100ae64ee18c6cdb3ac54fa3fd64bd744e6e6931",
-                "reference": "100ae64ee18c6cdb3ac54fa3fd64bd744e6e6931",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/653430e185e9c457b69bb879e30b6db1b4894606",
+                "reference": "653430e185e9c457b69bb879e30b6db1b4894606",
                 "shasum": ""
             },
             "require": {
@@ -3543,7 +3635,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.0.34"
+                "source": "https://github.com/statamic/cms/tree/v3.0.35"
             },
             "funding": [
                 {
@@ -3551,7 +3643,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-09T20:23:32+00:00"
+            "time": "2020-12-17T16:29:54+00:00"
         },
         {
             "name": "statamic/ssg",
